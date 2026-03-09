@@ -6,8 +6,8 @@ public class ReverseString {
 		// TODO Auto-generated method stub
 		String s = "abcdefgh";
 		char c[] = s.toCharArray();
-		int l=0, r=s.length();
-		while(l<r) {
+		int l=0, r=s.length()-1;
+		while(l<=r) {
 			char temp = c[l];
 			c[l] = c[r];
 			c[r] = temp;
